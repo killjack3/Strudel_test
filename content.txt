@@ -1,0 +1,26 @@
+setCpm(130/4)
+
+// samples("github:killjack3/Strudel_test")
+// s("NASA")
+
+stack(
+
+    note("[c#2 c#2 _ _ c#2 c#2 _ _ c#2 c#2 _ c1 _ b1 _ _ b1 b1 _ _ b1 b1 _ _ b1 b1 _ c1 _ c#2 _ _]*0.5")
+    .sound("gm_electric_bass_finger")
+    .legato(1)
+    .lpf(500)
+    .attack(slider(0.523))
+    .gain(slider(3.366, 0, 6))
+    ._pianoroll(),
+
+  sound("bd*4")
+    .lpf("200")
+    ._scope(),
+
+    note("f2")
+    .sound("gm_choir_aahs")
+    .gain(0.5)
+    .legato(1)
+    .decay(2)
+
+)
